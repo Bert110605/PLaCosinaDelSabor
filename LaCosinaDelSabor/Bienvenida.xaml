@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaCosinaDelSabor.BienvenidaPage">
+    <ScrollView>
+        <StackLayout Padding="20">
+        <Label Text="Contribuyendo a la ODS 2: Hambre Cero"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Margin="10"/>
+        <Image Source="ods2.png"
+               WidthRequest="200"
+               HeightRequest="200"
+               HorizontalOptions="Center"/>
+        <Button Text="Continuar"
+                Clicked="BtnContinuar_Clicked"
+                WidthRequest="150"
+                BackgroundColor="Aqua"
+                Margin="10"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

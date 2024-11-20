@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaCosinaDelSabor.MenuPage">
+    <ScrollView>
+        <StackLayout Padding="20">
+        <Image Source="plato.png"
+              WidthRequest="200"
+              HeightRequest="200"
+              HorizontalOptions="Center"/>
+        <Entry x:Name="txtIdPlato"
+               Placeholder="ID del Plato"
+               Margin="5"/>
+        <Entry x:Name="txtNombrePlato"
+               Placeholder="Nombre del Plato"
+               Margin="5"/>
+        <Entry x:Name="txtPrecioPlato"
+               Placeholder="Precio"
+               Keyboard="Numeric"
+               Margin="5"/>
+        <Entry x:Name="txtValorNutricional"
+               Placeholder="Valor Nutricional"
+               Margin="5"/>
+        <Entry x:Name="txtIdCategoria"
+               Placeholder="ID de la Categoría"
+               Margin="5"/>
+        <Button Text="Agregar Plato"
+                Clicked="BtnAgregarPlato_Clicked"
+                WidthRequest="150"
+                Margin="5"
+                BackgroundColor="Aqua"/>
+        <Button Text="Ver todos los platillos"
+                Clicked="BtnVerPlatillos_Clicked"
+                WidthRequest="200"
+                Margin="5"
+                BackgroundColor="Aqua"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

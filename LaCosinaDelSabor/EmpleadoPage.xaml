@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaCosinaDelSabor.EmpleadoPage">
+    <ScrollView>
+        <StackLayout Padding="20">
+        <Image Source="empleado.png"
+       WidthRequest="200"
+       HeightRequest="200"
+       HorizontalOptions="Center"/>
+        <Entry x:Name="txtCodigoEmpleado"
+               Placeholder="Código del Empleado"
+               Margin="5"/>
+        <Entry x:Name="txtNombreEmpleado"
+               Placeholder="Nombre"
+               Margin="5"/>
+        <Entry x:Name="txtApellidoEmpleado"
+               Placeholder="Apellido"
+               Margin="5"/>
+        <Entry x:Name="txtPuestoEmpleado"
+               Placeholder="Puesto"
+               Margin="5"/>
+        <Entry x:Name="txtSalarioEmpleado"
+               Placeholder="Salario"
+               Keyboard="Numeric"
+               Margin="5"/>
+        <DatePicker x:Name="datePickerFechaContratacion"
+                    Format="dd/MM/yyyy"
+                    Margin="5"/>
+        <Button Text="Agregar Empleado"
+                Clicked="BtnAgregarEmpleado_Clicked"
+                WidthRequest="150"
+                Margin="5"
+                BackgroundColor="Aqua"/>
+        <Button Text="Verificar Empleado"
+                Clicked="BtnIngresarEmpleado_Clicked"
+                WidthRequest="150"
+                Margin="5"
+                BackgroundColor="Aqua"/>
+        <Button Text="Ver todos los empleados"
+                Clicked="BtnEmpleadosAgregados_Clicked"
+                WidthRequest="200"
+                Margin="5"
+                BackgroundColor="Aqua"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
